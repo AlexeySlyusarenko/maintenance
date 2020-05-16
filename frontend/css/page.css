@@ -1,0 +1,15 @@
+.page {
+    position: relative;
+    width: var(--global-window-width);
+    height: var(--global-window-height);
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.page__login {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+}

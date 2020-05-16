@@ -1,0 +1,39 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.login__label {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 60%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login__input-text {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+.login__input-text:focus {
+    border-color: red;
+}
+
+.login__submit {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login__separate {
+    padding: 10px;
+    text-align: center;
+}

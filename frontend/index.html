@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, viewport-fit=contain">
+    <title>Smart service</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body class="page">
+    <script type="text/javascript">
+        let pageElem = document.querySelector('body'),
+            stylePageElem = document.createElement('style');
+
+        stylePageElem.setAttribute('type', 'text/css');
+
+        let globalWindowHeight = document.documentElement.clientHeight,
+            globalWindowWidth = document.documentElement.clientWidth;
+
+        stylePageElem.innerHTML = 
+            `body {
+                --global-window-width: ${globalWindowWidth}px;
+                --global-window-height: ${globalWindowHeight}px;
+            }`;
+        pageElem.appendChild(stylePageElem);
+
+        window.addEventListener("touchstart", () => {}, {passive: false} );
+        window.addEventListener("touchmove", (event) => {
+            event.preventDefault();
+        }, {passive: false} );
+    </script>
+
+    <header class="page__header">
+
+    </header>
+    <main class="page__main">
+
+    </main>
+    <footer class="page__footer">
+
+    </footer>
+    <section class="page__login">
+        <form class="login" action="#" method="post">
+            <label class="login__label">
+                Введите имя
+                <input class="login__input-text" name="name" type="text">
+            </label>
+            <label class="login__label" name="surname">
+                Введите фамилию
+                <input class="login__input-text" type="text">
+            </label>
+            <input class="login__submit" type="submit" value="Зарегестрироваться и Войти">
+        </form>
+        <div class="login__separate">или</div>
+        <form class="login" action="#" method="post">
+            <label class="login__label">
+                Выберите пользователя
+                <input class="login__input-text" name="user" type="text">
+            </label>
+            <input class="login__submit" type="submit" value="Войти">
+        </form>
+    </section>
+</body>
+</html>
