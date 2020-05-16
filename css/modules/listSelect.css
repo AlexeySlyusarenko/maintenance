@@ -1,0 +1,10 @@
+.list-select {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.list-select__item {
+    padding: 10px;
+}

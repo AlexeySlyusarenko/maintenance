@@ -50,15 +50,24 @@
                 <input class="login__input-text" type="text">
             </label>
             <input class="login__submit" type="submit" value="Зарегестрироваться и Войти">
+            <div class="login__separate">или</div>
         </form>
-        <div class="login__separate">или</div>
         <form class="login" action="#" method="post">
             <label class="login__label">
                 Выберите пользователя
                 <input class="login__input-text" name="user" type="text">
+                <div class="login__list-input">
+                    <ul class="list-select">
+                        <li class="list-select__item">Алексей Слюсаренко</li>
+                        <li class="list-select__item">Яков карасев</li>
+                        <li class="list-select__item">Александр Ключков</li>
+                    </ul>
+                </div>
             </label>
             <input class="login__submit" type="submit" value="Войти">
         </form>
     </section>
+
+    <script type="module" src="js/index.mjs"></script>
 </body>
 </html>
